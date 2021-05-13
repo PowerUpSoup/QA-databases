@@ -1,0 +1,20 @@
+1) select * from actor where first_name='John';
+
+2) select * from actor where last_name='neeson';
+
+3) select * from actor where mod(actor_id, 10)= 0;
+
+4) 'A Beautiful Drama of a Dentist And a Composer who must Battle a Sumo Wrestler in The First Manned Space Station'
+
+5) select * from film where rating='R';
+
+6) select * from film where rating != 'R';
+
+7) select * from film order by length limit 10;
+
+8) select * from film where special_features like '%Deleted Scenes%';
+
+9) select film.title, film_category.category_id
+	from film
+	inner join film_category on film.film_id=film_category.film_id
+		where film_category.category_id=11;
